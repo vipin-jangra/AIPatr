@@ -1,0 +1,129 @@
+.Navbar{
+    height: auto;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.Nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 30px 0px 30px ;
+}
+
+.Logo{
+    
+    float: left;
+    h2{
+        margin-top: 0;
+        
+    }
+    .bold{
+        font-weight: bold;
+ 
+    }
+}
+
+.Content{
+    width: 100%;
+    padding-right: 30mm;
+    .bold{
+        font-weight: bold;
+        color: black;
+    }
+    ul{
+        display: block;
+        list-style: none;
+        float: right;
+        padding-right: 20px;
+        margin: 0;
+        li{
+            
+            color:dimgray;
+            font-size: small;
+        }
+    }
+    h2{
+        margin: 0;
+    }
+}
+
+
+.menu-btn{
+    margin: 0;
+    border: none;
+    font-size: 12px;
+    padding: 10px 30px 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid rgb(193, 191, 191);
+    
+    span{
+        position: absolute;
+        right:8px;
+        top:7px
+    }
+}
+
+.mob-view{
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: fit-content;
+    background-color: white;
+    gap:20px;
+    padding: 10px;
+    position: absolute;
+    right: 24px;
+    top:70px;
+    border-radius: 40px;
+    z-index: 999;
+    
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap:10px;
+       padding: 15px;
+       .bold{
+        
+        color: black;
+        }
+        ul{
+            list-style-type: none;
+            width:100%;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        li{
+            border-bottom: 1px solid dimgray;
+            color: dimgray;
+            line-height: 1.8;
+            
+        }
+
+    }
+}
+.Buttons{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 40em) {
+    .Content{
+        display: none;
+    }
+    .Buttons-desk{
+        display: none;
+    }
+    .Buttons{
+        display: block;
+    }
+}

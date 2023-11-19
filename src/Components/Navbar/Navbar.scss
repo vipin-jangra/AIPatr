@@ -14,16 +14,12 @@
 }
 
 .Logo{
-    
     float: left;
     h2{
         margin-top: 0;
-        
+        color: black;
     }
-    .bold{
-        font-weight: bold;
- 
-    }
+    
 }
 
 .Content{
@@ -53,7 +49,6 @@
 
 .menu-btn{
     margin: 0;
-    border: none;
     font-size: 12px;
     padding: 10px 30px 10px 20px;
     border-radius: 20px;
@@ -61,7 +56,7 @@
     display: flex;
     align-items: center;
     border: 1.5px solid rgb(193, 191, 191);
-    
+    background-color: transparent;
     span{
         position: absolute;
         right:8px;
